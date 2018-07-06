@@ -1,0 +1,32 @@
+import random
+i=0
+j=3
+k=0
+
+print("         GAME START         ")
+for w in range(10):
+    x=int(input("Enter your no :"))
+    a=random.randint(1,7)
+    
+    if(x%a==0):
+       i=i+1
+       print("you win...your score is",i)
+       continue
+       
+        
+    elif(x%a!=0):
+        j=j-k
+        print("you lose..your chance remaining is",j)
+        k=k+1
+        if(j<1):
+            print("Game over! your score is",i)
+            break
+    else:
+        continue
+        
+
+
+    
+    
+
+
